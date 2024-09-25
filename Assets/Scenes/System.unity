@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -174,7 +173,7 @@ MonoBehaviour:
       _sceneName: System
     LoadingOnInitialization: 0
     IsGameplayScene: 0
-    DontUnload: 0
+    DontUnload: 1
   - SceneName: Menu
     SceneField:
       _sceneAsset: {fileID: 102900000, guid: 134fb0b25c5aebb4b8858f1a92930632, type: 3}
@@ -182,17 +181,10 @@ MonoBehaviour:
     LoadingOnInitialization: 1
     IsGameplayScene: 0
     DontUnload: 0
-  - SceneName: UI
+  - SceneName: PlayScene
     SceneField:
-      _sceneAsset: {fileID: 102900000, guid: a44cdead97aaab8408067ec62b07781f, type: 3}
-      _sceneName: UI
-    LoadingOnInitialization: 0
-    IsGameplayScene: 0
-    DontUnload: 0
-  - SceneName: Dangeon
-    SceneField:
-      _sceneAsset: {fileID: 102900000, guid: 7deaef9f6755dfc4689101963b1daf82, type: 3}
-      _sceneName: Dangeon
+      _sceneAsset: {fileID: 102900000, guid: 8d68a8c139112ee4387ec230ac89a4a2, type: 3}
+      _sceneName: PlayScene
     LoadingOnInitialization: 0
     IsGameplayScene: 1
     DontUnload: 0
@@ -260,28 +252,17 @@ MonoBehaviour:
   m_MoveRepeatDelay: 0.5
   m_MoveRepeatRate: 0.1
   m_XRTrackingOrigin: {fileID: 0}
-  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018,
-    type: 3}
-  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018,
-    type: 3}
-  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018,
-    type: 3}
-  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018,
-    type: 3}
-  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018,
-    type: 3}
-  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018,
-    type: 3}
-  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018,
-    type: 3}
-  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018,
-    type: 3}
-  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018,
-    type: 3}
-  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018,
-    type: 3}
-  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018,
-    type: 3}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
@@ -342,8 +323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: b76082f6b64b41e49ae774dff7ff1e43,
-    type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: b76082f6b64b41e49ae774dff7ff1e43, type: 3}
   m_NotificationBehavior: 3
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -687,10 +667,9 @@ MonoBehaviour:
   _SFXAudioSource: {fileID: 1910143138}
   _ambientAudioSource: {fileID: 1613590312}
   _ui:
-  - {fileID: 11400000, guid: 2e3cc9ca4d84a0a47b5498313f82acf8, type: 2}
+  - {fileID: 11400000, guid: 17439b248b992204493498a4f38a2edd, type: 2}
   _musics: []
-  _SFX:
-  - {fileID: 11400000, guid: 23b6bca47ac5c09428cc5105bc3b6371, type: 2}
+  _SFX: []
   _ambients: []
 --- !u!1 &1613590310
 GameObject:
