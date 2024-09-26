@@ -5,8 +5,14 @@ public class CarDisplayDataController : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI _dataText;
 
-    public void UpdateDisplayDataText(float vehicleSpeed , float clutchRpm, float gearNumber)
+    public void UpdateDisplayDataText(float vehicleSpeed, float clutchRpm, int gearNumber, TransmissionOperatingMode transmissionMode, bool engineWorking)
     {
-        _dataText.SetText($"Speed: {vehicleSpeed:F0}\nRPM: {clutchRpm:F0}\nGear: {gearNumber:F0}");
+        _dataText.SetText(
+            $"Speed: {vehicleSpeed:F0} km/h\n" +
+            $"RPM: {clutchRpm:F0}\n" +
+            $"Gear: {gearNumber}\n" +
+            $"Transmission Mode: {transmissionMode}\n" +
+            $"Engine Status: {(engineWorking ? "On" : "Off")}"
+        );
     }
 }
