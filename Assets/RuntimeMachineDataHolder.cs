@@ -1,18 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using VehiclePhysics;
 
 public class RuntimeMachineDataHolder : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    [SerializeField] private VPVehicleController _vehicleController;
+    [SerializeField] private Engine _engine;
 
-    // Update is called once per frame
-    void Update()
+    public float vehicleSpeed { get => _vehicleController.speed;  }
+
+    public void Update()
     {
-        
+        Debug.LogError(vehicleSpeed);
     }
 }
